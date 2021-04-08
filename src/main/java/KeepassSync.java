@@ -15,9 +15,14 @@ public class KeepassSync {
     public static void main(String[] args) {
         // Process CLI args.
         KeepassCommand keepassCommand = new KeepassCommand();
-        new CommandLine(keepassCommand).parseArgs(args);
-        Properties conf = new Properties();
+        CommandLine.ParseResult pr = new CommandLine(keepassCommand).parseArgs(args);
 
+        if(pr.isUsageHelpRequested()) {
+            new CommandLine(keepassCommand).usage(System.out);
+            System.exit(-1);
+        }
+
+        Properties conf = new Properties();
 
         // Read config file.
         try {
