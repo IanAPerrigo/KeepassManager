@@ -17,7 +17,7 @@ dependencies {
     compile "org.glassfish.jaxb:jaxb-runtime:2.3.2"
 
     compile 'com.amazonaws:aws-java-sdk:1.11.163'
-    implementation 'info.picocli:picocli:4.6.1'
+    implementation 'info.picocli:picocli:4.7.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     
