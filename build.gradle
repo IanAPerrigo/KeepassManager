@@ -18,7 +18,7 @@ dependencies {
 
     compile 'com.amazonaws:aws-java-sdk:1.11.163'
     implementation 'info.picocli:picocli:4.6.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     
     // dependabot testing
